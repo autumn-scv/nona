@@ -80,7 +80,7 @@ git add -A; git commit -m "chore: Vite + Vue 3 프로젝트 뼈대를 만든다"
 
 **Interfaces:**
 - Produces: `works` (배열 default export), `findWork(slug)` — 이후 모든 페이지가 사용
-  - work 객체: `{ slug, title, price, category, summary, description, images }`
+  - work 객체: `{ slug, title, date, category, summary, description, images }`
   - `images`: `src/assets/works/<slug>/` 기준 파일명 배열. 첫 번째가 썸네일.
 
 - [ ] **Step 1: 실패하는 테스트 작성**
@@ -96,7 +96,7 @@ describe('works 데이터', () => {
     for (const w of works) {
       expect(w.slug).toMatch(/^[a-z0-9-]+$/)
       expect(w.title).toBeTruthy()
-      expect(w.price).toBeTruthy()
+      expect(w.date).toBeTruthy()
       expect(w.category).toBeTruthy()
       expect(w.description).toBeTruthy()
       expect(w.images.length).toBeGreaterThan(0)
@@ -127,7 +127,7 @@ const works = [
   {
     slug: 'bappy',
     title: 'BAPPY',
-    price: '$10',
+    date: '2026.01',
     category: 'Design',
     summary: '1인 가구를 위한 스마트 공동 주문 플랫폼',
     description:
@@ -140,7 +140,7 @@ const works = [
   {
     slug: 'chaek-gpt',
     title: '책GPT',
-    price: '$10',
+    date: '2026.01',
     category: 'Design',
     summary: '기억으로 잃어버린 책을 찾아주는 AI 검색 서비스',
     description:
@@ -151,7 +151,7 @@ const works = [
   {
     slug: 'business-card',
     title: '명함',
-    price: '$3',
+    date: '2025',
     category: 'Goods',
     summary: '개인 브랜드 명함 디자인',
     description: '개인 브랜드 아이덴티티를 담은 명함 시리즈입니다.',
@@ -160,7 +160,7 @@ const works = [
   {
     slug: 'ecobag',
     title: '에코백',
-    price: '$8',
+    date: '2025',
     category: 'Goods',
     summary: '브랜드 굿즈 에코백',
     description: '일러스트를 활용한 브랜드 굿즈 에코백 시리즈입니다.',
@@ -169,7 +169,7 @@ const works = [
   {
     slug: 'phone-case',
     title: '핸드폰 케이스',
-    price: '$12',
+    date: '2025',
     category: 'Goods',
     summary: '브랜드 굿즈 핸드폰 케이스',
     description: '일러스트를 활용한 핸드폰 케이스 시리즈입니다.',
@@ -178,7 +178,7 @@ const works = [
   {
     slug: 'poster',
     title: '포스터',
-    price: '$5',
+    date: '2025',
     category: 'Graphic',
     summary: '그래픽 포스터',
     description: '브랜드 무드를 담은 그래픽 포스터 작업입니다.',
@@ -187,7 +187,7 @@ const works = [
   {
     slug: 'album',
     title: '음반',
-    price: '$15',
+    date: '2025',
     category: 'Graphic',
     summary: '음반 아트워크',
     description: '음반 커버 아트워크 디자인 작업입니다.',
@@ -474,7 +474,7 @@ git add -A; git commit -m "feat: 홈 페이지를 구현한다"
 - Test: `src/pages/WorkListPage.test.js`
 
 **Interfaces:**
-- Consumes: `works` (default export), work 객체의 `slug/title/price/category/summary/images[0]`
+- Consumes: `works` (default export), work 객체의 `slug/title/date/category/summary/images[0]`
 - Produces: `WorkCard` (props: `work`)
 
 - [ ] **Step 1: 실패하는 테스트 작성**
@@ -514,7 +514,7 @@ Expected: FAIL — 카드 0개
     <div class="meta">
       <span class="category">{{ work.category }}</span>
       <h3>{{ work.title }}</h3>
-      <p class="price">{{ work.price }}</p>
+      <p class="price">{{ work.date }}</p>
     </div>
   </router-link>
 </template>
@@ -641,7 +641,7 @@ Expected: FAIL
       <div class="info">
         <span class="badge">Best!</span>
         <h1>{{ work.title }}</h1>
-        <p class="price">{{ work.price }}</p>
+        <p class="price">{{ work.date }}</p>
         <p class="summary">{{ work.summary }}</p>
         <p class="description">{{ work.description }}</p>
         <button class="cart" type="button">Add to Cart</button>

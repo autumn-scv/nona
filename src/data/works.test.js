@@ -7,7 +7,7 @@ describe('works 데이터', () => {
     for (const w of works) {
       expect(w.slug).toMatch(/^[a-z0-9-]+$/)
       expect(w.title).toBeTruthy()
-      expect(w.price).toBeTruthy()
+      expect(w.date).toBeTruthy()
       expect(w.category).toBeTruthy()
       expect(w.description).toBeTruthy()
       expect(w.images.length).toBeGreaterThan(0)
