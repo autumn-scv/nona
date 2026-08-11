@@ -9,9 +9,9 @@
         <div class="icon" aria-hidden="true">💼</div>
         <div class="label">linkedin.com/in/autumnrkf</div>
       </a>
-      <a href="mailto:chogaeull@gmail.com" class="contact-card">
+      <a href="mailto:whgaeul@gmail.com" class="contact-card">
         <div class="icon" aria-hidden="true">💬</div>
-        <div class="label">chogaeull@gmail.com</div>
+        <div class="label">whgaeul@gmail.com</div>
       </a>
     </div>
   </section>
