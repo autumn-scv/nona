@@ -5,13 +5,9 @@
       <p class="subtitle">You can contact me through the channels below.</p>
     </div>
     <div class="contact-grid">
-      <a href="https://www.instagram.com/auttml" target="_blank" rel="noopener" class="contact-card">
-        <div class="icon" aria-hidden="true">📷</div>
-        <div class="label">Instagram: @auttml</div>
-      </a>
-      <a href="https://www.linkedin.com/in/chogaeul" target="_blank" rel="noopener" class="contact-card">
+      <a href="https://www.linkedin.com/in/autumnrkf/" target="_blank" rel="noopener" class="contact-card">
         <div class="icon" aria-hidden="true">💼</div>
-        <div class="label">www.linkedin.com/in/chogaeul</div>
+        <div class="label">linkedin.com/in/autumnrkf</div>
       </a>
       <a href="mailto:chogaeull@gmail.com" class="contact-card">
         <div class="icon" aria-hidden="true">💬</div>
