@@ -127,7 +127,7 @@ const works = [
   {
     slug: 'bappy',
     title: 'BAPPY',
-    date: '2026.01',
+    date: '2025.09',
     category: 'Design',
     summary: '1인 가구를 위한 스마트 공동 주문 플랫폼',
     description:
@@ -151,7 +151,7 @@ const works = [
   {
     slug: 'business-card',
     title: '명함',
-    date: '2025',
+    date: '2025.09',
     category: 'Goods',
     summary: '개인 브랜드 명함 디자인',
     description: '개인 브랜드 아이덴티티를 담은 명함 시리즈입니다.',
@@ -160,7 +160,7 @@ const works = [
   {
     slug: 'ecobag',
     title: '에코백',
-    date: '2025',
+    date: '2025.09',
     category: 'Goods',
     summary: '브랜드 굿즈 에코백',
     description: '일러스트를 활용한 브랜드 굿즈 에코백 시리즈입니다.',
@@ -169,7 +169,7 @@ const works = [
   {
     slug: 'phone-case',
     title: '핸드폰 케이스',
-    date: '2025',
+    date: '2025.09',
     category: 'Goods',
     summary: '브랜드 굿즈 핸드폰 케이스',
     description: '일러스트를 활용한 핸드폰 케이스 시리즈입니다.',
@@ -178,7 +178,7 @@ const works = [
   {
     slug: 'poster',
     title: '포스터',
-    date: '2025',
+    date: '2025.09',
     category: 'Graphic',
     summary: '그래픽 포스터',
     description: '브랜드 무드를 담은 그래픽 포스터 작업입니다.',
@@ -187,7 +187,7 @@ const works = [
   {
     slug: 'album',
     title: '음반',
-    date: '2025',
+    date: '2025.09',
     category: 'Graphic',
     summary: '음반 아트워크',
     description: '음반 커버 아트워크 디자인 작업입니다.',
