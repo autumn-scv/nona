@@ -8,11 +8,12 @@
     <div class="body">
       <div class="gallery">
         <div class="thumbs">
-          <img
-            v-for="(img, i) in work.images" :key="img" :src="imageUrl(img)"
-            :class="{ active: i === current }" :alt="`${work.title} ${i + 1}`"
-            @click="current = i"
-          />
+          <button
+            v-for="(img, i) in work.images" :key="img" type="button" class="thumb"
+            :class="{ active: i === current }" @click="current = i"
+          >
+            <img :src="imageUrl(img)" :alt="`${work.title} ${i + 1}`" />
+          </button>
         </div>
         <img class="main-image" :src="imageUrl(work.images[current])" :alt="work.title" />
       </div>
@@ -25,7 +26,7 @@
         <button class="cart" type="button">Add to Cart</button>
         <button class="wish" type="button">♡ Add to Wishlist</button>
         <details><summary>Size &amp; fit</summary><p>{{ work.summary }}</p></details>
-        <details><summary>Care</summary><p>디지털 작업물입니다.</p></details>
+        <details><summary>Care</summary><p>{{ work.category === 'Goods' ? '실물 굿즈 작업입니다.' : '디지털 작업물입니다.' }}</p></details>
         <details><summary>Composition</summary><p>{{ work.category }}</p></details>
       </div>
     </div>
@@ -57,8 +58,8 @@ function imageUrl(name) {
 .body { display: flex; gap: 4rem; flex-wrap: wrap; }
 .gallery { display: flex; gap: 1rem; flex: 1 1 480px; }
 .thumbs { display: flex; flex-direction: column; gap: 0.5rem; width: 64px; overflow-y: auto; max-height: 640px; }
-.thumbs img { border: 1px solid #eee; cursor: pointer; }
-.thumbs img.active { border-color: #1a1a1a; }
+.thumbs button { padding: 0; border: 1px solid #eee; background: none; cursor: pointer; }
+.thumbs button.active { border-color: #1a1a1a; }
 .main-image { flex: 1; object-fit: contain; max-height: 640px; }
 .info { flex: 1 1 360px; }
 .badge { background: #eee; font-size: 0.75rem; padding: 0.2rem 0.6rem; border-radius: 4px; }

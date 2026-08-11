@@ -1,6 +1,6 @@
 <template>
   <header class="site-header">
-    <button class="icon-btn" aria-label="메뉴">☰</button>
+    <span class="icon-btn" aria-hidden="true">☰</span>
     <router-link to="/" class="logo">Chogaeul</router-link>
     <nav class="icons">
       <span class="icon-btn" aria-hidden="true">🔍</span>
