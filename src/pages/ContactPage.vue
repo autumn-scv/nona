@@ -6,20 +6,16 @@
     </div>
     <div class="contact-grid">
       <a href="https://www.instagram.com/auttml" target="_blank" rel="noopener" class="contact-card">
-        <div class="icon instagram-icon">📷</div>
+        <div class="icon" aria-hidden="true">📷</div>
         <div class="label">Instagram: @auttml</div>
       </a>
       <a href="https://www.linkedin.com/in/chogaeul" target="_blank" rel="noopener" class="contact-card">
-        <div class="icon linkedin-icon">💼</div>
+        <div class="icon" aria-hidden="true">💼</div>
         <div class="label">www.linkedin.com/in/chogaeul</div>
       </a>
       <a href="mailto:chogaeull@gmail.com" class="contact-card">
-        <div class="icon email-icon">💬</div>
+        <div class="icon" aria-hidden="true">💬</div>
         <div class="label">chogaeull@gmail.com</div>
-      </a>
-      <a href="tel:+82-010-9034-0227" class="contact-card">
-        <div class="icon phone-icon">📞</div>
-        <div class="label">+82 010-9034-0227</div>
       </a>
     </div>
   </section>
