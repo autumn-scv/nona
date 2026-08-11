@@ -75,7 +75,7 @@ const works = [
     category: 'Graphic',
     summary: '그래픽 포스터',
     description: '브랜드 무드를 담은 그래픽 포스터 작업입니다.',
-    images: ['01.png', '02.png'],
+    images: ['01.png'],
   },
   {
     slug: 'album',
