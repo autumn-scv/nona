@@ -11,7 +11,16 @@ const works = [
       '배달비 절감을 위해 주변 이웃과 메뉴를 투표하고 팀을 이루는 공동 주문 매칭까지 제공합니다. ' +
       '사용자 반경 내 매칭과 랜드마크 픽업 장소 지정으로 1인 가구가 안심하고 이용할 수 있는 환경을 구축했습니다. ' +
       '동아대학교 부민캠퍼스를 초기 타겟으로 대학생의 실질적인 생활 문제를 해결하고자 했습니다.',
-    images: ['placeholder.png'],
+    images: [
+      '01-main.png',
+      '02-roulette.png',
+      '03-search.png',
+      '04-delivery-share.png',
+      '05-cart.png',
+      '06-login.png',
+      '07-mypage.png',
+      '08-customer-center.png',
+    ],
   },
   {
     slug: 'chaek-gpt',
@@ -22,7 +31,15 @@ const works = [
     description:
       '제목이 기억나지 않는 책을 책에 관한 기억만으로 찾아주는 서비스입니다. ' +
       '기억 조각을 입력하면 AI 와 대화하며 범위를 좁혀 책을 발견하는 3단계 플로우(입력 → 대화 → 발견)를 설계했습니다.',
-    images: ['placeholder.png'],
+    images: [
+      '01-search-main.png',
+      '02-search-results.png',
+      '03-search-history.png',
+      '04-chat-hint.png',
+      '05-final-result.png',
+      '06-library.png',
+      '07-wishlist.png',
+    ],
   },
   {
     slug: 'business-card',
@@ -31,7 +48,7 @@ const works = [
     category: 'Goods',
     summary: '개인 브랜드 명함 디자인',
     description: '개인 브랜드 아이덴티티를 담은 명함 시리즈입니다.',
-    images: ['placeholder.png'],
+    images: ['01.png', '02.png', '03.png'],
   },
   {
     slug: 'ecobag',
@@ -40,7 +57,7 @@ const works = [
     category: 'Goods',
     summary: '브랜드 굿즈 에코백',
     description: '일러스트를 활용한 브랜드 굿즈 에코백 시리즈입니다.',
-    images: ['placeholder.png'],
+    images: ['01.png', '02.png', '03.png', '04.png', '05.png', '06.png'],
   },
   {
     slug: 'phone-case',
@@ -49,7 +66,7 @@ const works = [
     category: 'Goods',
     summary: '브랜드 굿즈 핸드폰 케이스',
     description: '일러스트를 활용한 핸드폰 케이스 시리즈입니다.',
-    images: ['placeholder.png'],
+    images: ['01.png', '02.png', '03.png', '04.png', '05.png', '06.png'],
   },
   {
     slug: 'poster',
@@ -58,7 +75,7 @@ const works = [
     category: 'Graphic',
     summary: '그래픽 포스터',
     description: '브랜드 무드를 담은 그래픽 포스터 작업입니다.',
-    images: ['placeholder.png'],
+    images: ['01.png', '02.png'],
   },
   {
     slug: 'album',
@@ -67,7 +84,7 @@ const works = [
     category: 'Graphic',
     summary: '음반 아트워크',
     description: '음반 커버 아트워크 디자인 작업입니다.',
-    images: ['placeholder.png'],
+    images: ['01.png'],
   },
 ]
 
