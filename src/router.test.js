@@ -18,6 +18,10 @@ describe('라우팅', () => {
       expect(wrapper.find('main').exists()).toBe(true)
     }
   })
+  it('없는 경로는 404 페이지를 보여준다', async () => {
+    const wrapper = await mountAt('/no-such-page')
+    expect(wrapper.text()).toContain('페이지를 찾을 수 없습니다')
+  })
   it('헤더 로고가 모든 페이지에 있다', async () => {
     const wrapper = await mountAt('/works')
     expect(wrapper.text()).toContain('Chogaeul')
