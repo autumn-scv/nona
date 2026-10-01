@@ -4,7 +4,7 @@ const works = [
     slug: 'gshared',
     title: 'G-shared',
     date: '2026.09',
-    category: 'Development',
+    category: '개발',
     summary: '유휴 GPU 공유 AI 연산 플랫폼 (SSAFY 특화 프로젝트)',
     description:
       '개인의 유휴 GPU를 AI 파인튜닝 연산에 위탁하고 블록체인 Escrow로 예치·정산하는 플랫폼입니다. ' +
@@ -27,7 +27,7 @@ const works = [
     slug: 'secome',
     title: 'secome',
     date: '2026.08',
-    category: 'Development',
+    category: '개발',
     summary: '회의록 기반 문서 협업 플랫폼 (SSAFY 공통 프로젝트)',
     description:
       '회의가 끝나면 회의록과 문서가 남는 협업 플랫폼입니다. 6인 팀에서 문서·폴더 도메인 백엔드를 맡아 ' +
@@ -47,7 +47,7 @@ const works = [
     slug: 'sonuri',
     title: '혼자소누리',
     date: '2026.06',
-    category: 'Development',
+    category: '개발',
     summary: '코딩 없이 만드는 노코드 쇼핑몰 빌더 (SSAFY 관통 프로젝트)',
     description:
       '템플릿으로 온라인 쇼핑몰을 만드는 멀티테넌트 플랫폼입니다. 2인 팀에서 Vue 화면 다수와 ' +
@@ -64,7 +64,7 @@ const works = [
     slug: 'bappy',
     title: 'BAPPY',
     date: '2025.09',
-    category: 'Design',
+    category: '디자인',
     summary: '1인 가구를 위한 스마트 공동 주문 플랫폼',
     description:
       '사용자가 직접 후보를 입력해 메뉴 결정을 돕는 음식 추천 룰렛부터, ' +
@@ -86,7 +86,7 @@ const works = [
     slug: 'chaek-gpt',
     title: '책GPT',
     date: '2026.01',
-    category: 'Design',
+    category: '디자인',
     summary: '기억으로 잃어버린 책을 찾아주는 AI 검색 서비스',
     description:
       '제목이 기억나지 않는 책을 책에 관한 기억만으로 찾아주는 서비스입니다. ' +
@@ -105,7 +105,7 @@ const works = [
     slug: 'business-card',
     title: '명함',
     date: '2025.09',
-    category: 'Goods',
+    category: '굿즈',
     summary: '개인 브랜드 명함 디자인',
     description: '개인 브랜드 아이덴티티를 담은 명함 시리즈입니다.',
     images: ['01.png', '02.png', '03.png'],
@@ -114,7 +114,7 @@ const works = [
     slug: 'ecobag',
     title: '에코백',
     date: '2025.09',
-    category: 'Goods',
+    category: '굿즈',
     summary: '브랜드 굿즈 에코백',
     description: '일러스트를 활용한 브랜드 굿즈 에코백 시리즈입니다.',
     images: ['01.png', '02.png', '03.png', '04.png', '05.png', '06.png'],
@@ -123,7 +123,7 @@ const works = [
     slug: 'phone-case',
     title: '핸드폰 케이스',
     date: '2025.09',
-    category: 'Goods',
+    category: '굿즈',
     summary: '브랜드 굿즈 핸드폰 케이스',
     description: '일러스트를 활용한 핸드폰 케이스 시리즈입니다.',
     images: ['01.png', '02.png', '03.png', '04.png', '05.png', '06.png'],
@@ -132,7 +132,7 @@ const works = [
     slug: 'poster',
     title: '포스터',
     date: '2025.09',
-    category: 'Graphic',
+    category: '그래픽',
     summary: '그래픽 포스터',
     description: '브랜드 무드를 담은 그래픽 포스터 작업입니다.',
     images: ['01.png'],
@@ -141,7 +141,7 @@ const works = [
     slug: 'album',
     title: '음반',
     date: '2025.09',
-    category: 'Graphic',
+    category: '그래픽',
     summary: '음반 아트워크',
     description: '음반 커버 아트워크 디자인 작업입니다.',
     images: ['01.png'],
