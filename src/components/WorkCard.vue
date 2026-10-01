@@ -3,6 +3,7 @@
     <img :src="thumb" :alt="work.title" />
     <div class="meta">
       <span class="category">{{ work.category }}</span>
+      <span v-if="work.isNew" class="new">NEW</span>
       <h3>{{ work.title }}</h3>
       <p class="price">{{ work.date }}</p>
     </div>
@@ -22,6 +23,7 @@ const thumb = computed(
 .card img { aspect-ratio: 3 / 4; object-fit: cover; width: 100%; background: #f4f4f4; }
 .meta { padding: 0.8rem 0.2rem; }
 .category { font-size: 0.75rem; color: #999; text-transform: uppercase; }
+.new { margin-left: 0.4rem; background: #1a1a1a; color: #fff; font-size: 0.65rem; font-weight: 700; padding: 0.1rem 0.4rem; border-radius: 3px; }
 h3 { font-size: 1rem; margin: 0.2rem 0; }
 .price { color: #555; font-size: 0.9rem; }
 </style>
