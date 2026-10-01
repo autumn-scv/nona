@@ -1,6 +1,66 @@
 // 작업물 추가 = 객체 하나 + assets/works/<slug>/ 이미지. 코드 수정 없음.
 const works = [
   {
+    slug: 'gshared',
+    title: 'G-shared',
+    date: '2026.09',
+    category: 'Development',
+    summary: '유휴 GPU 공유 AI 연산 플랫폼 (SSAFY 특화 프로젝트)',
+    description:
+      '개인의 유휴 GPU를 AI 파인튜닝 연산에 위탁하고 블록체인 Escrow로 예치·정산하는 플랫폼입니다. ' +
+      '6인 팀에서 백엔드와 프론트엔드를 폭넓게 담당하며 develop 브랜치 통합(MR 리뷰·머지)을 맡았습니다. ' +
+      '백엔드에서는 동시 재발급·다른 기기 로그인에 세션이 끊기던 문제를 refresh 토큰 기기별 회전(Redis Lua 원자 회전)으로 해결했습니다. ' +
+      '프론트에서는 Next.js(App Router)로 온체인 정보 패널, 작업 생성 위저드, GPU 등급 카드 UI, 작업 종료 토스트 알림 등을 구현했습니다.',
+    images: [
+      'gshared-01-landing.png',
+      'gshared-09-token.png',
+      'gshared-02-login.png',
+      'gshared-03-dashboard.png',
+      'gshared-04-jobs.png',
+      'gshared-05-job-wizard.png',
+      'gshared-06-workers.png',
+      'gshared-07-wallet.png',
+      'gshared-00-overview.png',
+    ],
+  },
+  {
+    slug: 'secome',
+    title: 'secome',
+    date: '2026.08',
+    category: 'Development',
+    summary: '회의록 기반 문서 협업 플랫폼 (SSAFY 공통 프로젝트)',
+    description:
+      '회의가 끝나면 회의록과 문서가 남는 협업 플랫폼입니다. 6인 팀에서 문서·폴더 도메인 백엔드를 맡아 ' +
+      'Spring Boot·JPA·PostgreSQL로 REST API 8개를 설계·구현했습니다. ' +
+      '지우면 끝이던 삭제를 휴지통(deleted_at + 살아 있는 행만 담는 부분 인덱스)으로 바꾸고, ' +
+      '회의록은 유니크 제약을 일부러 유지해 재생성은 막고 복구로만 되돌리게 했습니다. ' +
+      '문서가 문서를 품던 모델을 폴더 도메인으로 바꾸고 트리 조회가 본문을 읽지 않게 했습니다.',
+    images: [
+      'secome-00-cover.png',
+      'secome-02-trash.png',
+      'secome-03-minutes.png',
+      'secome-04-folder.png',
+      'secome-01-overview.png',
+    ],
+  },
+  {
+    slug: 'sonuri',
+    title: '혼자소누리',
+    date: '2026.06',
+    category: 'Development',
+    summary: '코딩 없이 만드는 노코드 쇼핑몰 빌더 (SSAFY 관통 프로젝트)',
+    description:
+      '템플릿으로 온라인 쇼핑몰을 만드는 멀티테넌트 플랫폼입니다. 2인 팀에서 Vue 화면 다수와 ' +
+      'Django support·community 도메인을 맡았습니다. API 명세를 혼자 바꿔 프론트가 전부 깨진 실수를 ' +
+      '역추적·롤백하고, 인터페이스 변경은 사전 공유를 거치는 절차로 만들었습니다.',
+    images: [
+      'sonuri-01-home.png',
+      'sonuri-00-case.png',
+      'sonuri-02-login.png',
+      'sonuri-05-signup.png',
+    ],
+  },
+  {
     slug: 'bappy',
     title: 'BAPPY',
     date: '2025.09',

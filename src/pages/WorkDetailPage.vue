@@ -23,8 +23,8 @@
         <p class="price">{{ work.date }}</p>
         <p class="summary">{{ work.summary }}</p>
         <p class="description">{{ work.description }}</p>
-        <button class="cart" type="button">Add to Cart</button>
-        <button class="wish" type="button">♡ Add to Wishlist</button>
+        <router-link class="cart" to="/contact">Add to Cart</router-link>
+        <button class="wish" type="button" @click="toggleWish">{{ wished ? '♥ In Wishlist' : '♡ Add to Wishlist' }}</button>
         <details><summary>Size &amp; fit</summary><p>{{ work.summary }}</p></details>
         <details><summary>Care</summary><p>{{ work.category === 'Goods' ? '실물 굿즈 작업입니다.' : '디지털 작업물입니다.' }}</p></details>
         <details><summary>Composition</summary><p>{{ work.category }}</p></details>
@@ -45,6 +45,17 @@ const props = defineProps({ slug: { type: String, required: true } })
 const work = computed(() => findWork(props.slug))
 const current = ref(0)
 watch(() => props.slug, () => { current.value = 0 })
+
+const WISH_KEY = 'wishlist'
+const wishlist = ref(JSON.parse(localStorage.getItem(WISH_KEY) || '[]'))
+const wished = computed(() => wishlist.value.includes(props.slug))
+
+function toggleWish() {
+  wishlist.value = wished.value
+    ? wishlist.value.filter((s) => s !== props.slug)
+    : [...wishlist.value, props.slug]
+  localStorage.setItem(WISH_KEY, JSON.stringify(wishlist.value))
+}
 
 function imageUrl(name) {
   return new URL(`../assets/works/${props.slug}/${name}`, import.meta.url).href
@@ -68,6 +79,7 @@ h1 { font-size: 2.2rem; margin: 0.5rem 0 0; }
 .summary { font-weight: 600; margin-bottom: 0.8rem; }
 .description { color: #555; margin-bottom: 1.5rem; }
 .cart {
+  display: block; text-align: center; text-decoration: none;
   width: 100%; background: #4a90e2; color: #fff; border: none; padding: 0.9rem;
   border-radius: 6px; font-size: 1rem; font-weight: 600; margin-bottom: 0.8rem;
 }
