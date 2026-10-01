@@ -18,10 +18,10 @@ import { ref, computed } from 'vue'
 import WorkCard from '../components/WorkCard.vue'
 import works from '../data/works.js'
 
-const categories = ['All', ...new Set(works.map(w => w.category))]
-const selected = ref('All')
+const categories = ['전체', ...new Set(works.map(w => w.category))]
+const selected = ref('전체')
 const filtered = computed(() =>
-  selected.value === 'All' ? works : works.filter(w => w.category === selected.value)
+  selected.value === '전체' ? works : works.filter(w => w.category === selected.value)
 )
 </script>
 
