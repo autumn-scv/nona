@@ -25,9 +25,9 @@
         <p class="description">{{ work.description }}</p>
         <router-link class="cart" to="/contact">채용 문의하기</router-link>
         <button class="wish" type="button" @click="toggleWish">{{ wished ? '♥ 찜한 작업' : '♡ 찜하기' }}</button>
-        <details><summary>Size &amp; fit</summary><p>{{ work.summary }}</p></details>
-        <details><summary>Care</summary><p>{{ work.category === 'Goods' ? '실물 굿즈 작업입니다.' : '디지털 작업물입니다.' }}</p></details>
-        <details><summary>Composition</summary><p>{{ work.category }}</p></details>
+        <details><summary>작업 개요</summary><p>{{ work.summary }}</p></details>
+        <details><summary>작업 형태</summary><p>{{ work.category === 'Goods' ? '실물 굿즈 작업입니다.' : '디지털 작업물입니다.' }}</p></details>
+        <details><summary>분류</summary><p>{{ work.category }}</p></details>
       </div>
     </div>
   </section>
