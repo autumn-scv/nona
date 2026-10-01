@@ -23,8 +23,8 @@
         <p class="price">{{ work.date }}</p>
         <p class="summary">{{ work.summary }}</p>
         <p class="description">{{ work.description }}</p>
-        <router-link class="cart" to="/contact">Add to Cart</router-link>
-        <button class="wish" type="button" @click="toggleWish">{{ wished ? '♥ In Wishlist' : '♡ Add to Wishlist' }}</button>
+        <router-link class="cart" to="/contact">채용 문의하기</router-link>
+        <button class="wish" type="button" @click="toggleWish">{{ wished ? '♥ 찜한 작업' : '♡ 찜하기' }}</button>
         <details><summary>Size &amp; fit</summary><p>{{ work.summary }}</p></details>
         <details><summary>Care</summary><p>{{ work.category === 'Goods' ? '실물 굿즈 작업입니다.' : '디지털 작업물입니다.' }}</p></details>
         <details><summary>Composition</summary><p>{{ work.category }}</p></details>

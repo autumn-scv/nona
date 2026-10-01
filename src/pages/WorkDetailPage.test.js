@@ -13,7 +13,7 @@ describe('작업물 상세', () => {
   it('slug 에 맞는 작업물을 렌더링한다', () => {
     const wrapper = mountWith('bappy')
     expect(wrapper.text()).toContain('BAPPY')
-    expect(wrapper.text()).toContain('Add to Cart')
+    expect(wrapper.text()).toContain('채용 문의하기')
   })
   it('없는 slug 면 안내 문구를 보여준다', () => {
     const wrapper = mountWith('no-such-work')
