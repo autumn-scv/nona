@@ -18,7 +18,7 @@
         <img class="main-image" :src="imageUrl(work.images[current])" :alt="work.title" />
       </div>
       <div class="info">
-        <span class="badge">Best!</span>
+        <span v-if="work.isNew" class="badge">NEW</span>
         <h1>{{ work.title }}</h1>
         <p class="price">{{ work.date }}</p>
         <p class="summary">{{ work.summary }}</p>
@@ -73,7 +73,7 @@ function imageUrl(name) {
 .thumbs button.active { border-color: #1a1a1a; }
 .main-image { flex: 1; object-fit: contain; max-height: 640px; }
 .info { flex: 1 1 360px; }
-.badge { background: #eee; font-size: 0.75rem; padding: 0.2rem 0.6rem; border-radius: 4px; }
+.badge { background: #1a1a1a; color: #fff; font-weight: 700; font-size: 0.75rem; padding: 0.2rem 0.6rem; border-radius: 4px; }
 h1 { font-size: 2.2rem; margin: 0.5rem 0 0; }
 .price { font-size: 1.6rem; font-weight: 700; margin: 0.5rem 0 1rem; }
 .summary { font-weight: 600; margin-bottom: 0.8rem; }

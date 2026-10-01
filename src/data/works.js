@@ -2,6 +2,7 @@
 const works = [
   {
     slug: 'gshared',
+    isNew: true,
     title: 'G-shared',
     date: '2026.09',
     category: '개발',
